@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -z "$DOCKER_ACCOUNT" ]; then
-    DOCKER_ACCOUNT=ewolff
+    DOCKER_ACCOUNT=rajneeshsharma76
 fi;
 kubectl run apache --image=docker.io/$DOCKER_ACCOUNT/microservice-kubernetes-demo-apache:latest --port=80
 kubectl expose deployment/apache --type="LoadBalancer" --port 80
