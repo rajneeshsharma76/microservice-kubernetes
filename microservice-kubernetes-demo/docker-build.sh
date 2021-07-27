@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ -z "$DOCKER_ACCOUNT" ]; then
-    DOCKER_ACCOUNT=ewolff
+    DOCKER_ACCOUNT=rajneeshsharma76
 fi;
 docker build --tag=microservice-kubernetes-demo-apache apache
 docker tag microservice-kubernetes-demo-apache $DOCKER_ACCOUNT/microservice-kubernetes-demo-apache:latest
